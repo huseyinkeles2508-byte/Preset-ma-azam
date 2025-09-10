@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preset Mağazam</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 After Effects Preset Mağazam</h1>
+    <p>Profesyonel editler için hazır presetler</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/a5/fa/8c/a5fa8c7e29e8aa6ab6aee0cff27ffc49.jpg" alt="Husow Edit Pack">
+      <h2>Husow Edit Pack</h2>
+      <p>Husow After Effects Edit Pack</p>
+      <div class="price" data-price="250">250₺</div>
+      <div class="discount-area">
+        <input type="text" class="discount-code" placeholder="İndirim kodu">
+        <button class="apply-discount">Uygula</button>
+      </div>
+      <a href="https://www.shopier.com/39242592" class="btn" target="_blank">Satın Al</a>
+      <a href="https://wa.me/905459306868?text=Preset%20satın%20almak%20istiyorum" class="btn" target="_blank">
+        WhatsApp ile Satın Al
+      </a>
+</a>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/22/e7/dc/22e7dc2b3fc65a4f5dda30e4b1417bf0.jpg" alt="CC PACK">
+      <h2>Husow CC Pack</h2>
+      <p>Edit için cc ayarları</p>
+      <div class="price" data-price="100">100₺</div>
+      <div class="discount-area">
+        <input type="text" class="discount-code" placeholder="İndirim kodu">
+        <button class="apply-discount">Uygula</button>
+      </div>
+     <a href="https://www.shopier.com/39242510" class="btn" target="_blank">Satın Al</a>
+      <a href="https://wa.me/905459306868?text=Preset%20satın%20almak%20istiyorum" class="btn" target="_blank">
+        WhatsApp ile Satın Al
+      </a>
+</a>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/c1/91/0b/c1910ba131146af7070150e2796535da.jpg" alt="Text effects">
+      <h2>Text Animation Pack</h2>
+      <p>After effects yazı efekti</p>
+      <div class="price" data-price="30">30₺</div>
+      <div class="discount-area">
+        <input type="text" class="discount-code" placeholder="İndirim kodu">
+        <button class="apply-discount">Uygula</button>
+      </div>
+      <a href="https://www.shopier.com/39242677" class="btn" target="_blank">Satın Al</a>
+      <a href="https://wa.me/905459306868?text=Preset%20satın%20almak%20istiyorum" class="btn" target="_blank">
+        WhatsApp ile Satın Al
+      </a>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/ec/7a/5f/ec7a5f75526fbaf34347e223a8e8b21f.jpg" alt="Shake Pack">
+      <h2>Shake Pack</h2>
+      <p>After effects Shakes</p>
+      <div class="price" data-price="70">70₺</div>
+      <div class="discount-area">
+        <input type="text" class="discount-code" placeholder="İndirim kodu">
+        <button class="apply-discount">Uygula</button>
+      </div>
+     <a href="https://www.shopier.com/39242617" class="btn" target="_blank">Satın Al</a>
+      <a href="https://wa.me/905459306868?text=Preset%20satın%20almak%20istiyorum" class="btn" target="_blank">
+        WhatsApp ile Satın Al
+      </a>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/e6/9b/90/e69b9030a062d209776bd05c19bb95b2.jpg" alt="Overlay Pack">
+      <h2>OVERLAY</h2>
+      <p>Edit için Overlay</p>
+      <div class="price" data-price="50">50₺</div>
+      <div class="discount-area">
+        <input type="text" class="discount-code" placeholder="İndirim kodu">
+        <button class="apply-discount">Uygula</button>
+      </div>
+        <a href="https://www.shopier.com/39242711" class="btn" target="_blank">Satın Al</a>
+      <a href="https://wa.me/905459306868?text=Preset%20satın%20almak%20istiyorum" class="btn" target="_blank">
+        WhatsApp ile Satın Al
+      </a>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/93/f3/7c/93f37c186423472f9d1b0c95b49517a2.jpg" alt="Transistion Pack">
+      <h2>Transistion Pack</h2>
+      <p>After effects transistion effect</p>
+      <div class="price" data-price="100">100₺</div>
+      <div class="discount-area">
+        <input type="text" class="discount-code" placeholder="İndirim kodu">
+        <button class="apply-discount">Uygula</button>
+      </div>
+       <a href="https://www.shopier.com/39242639" class="btn" target="_blank">Satın Al</a>
+      <a href="https://wa.me/905459306868?text=Preset%20satın%20almak%20istiyorum" class="btn" target="_blank">
+        WhatsApp ile Satın Al
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Preset Mağazam | Tüm hakları saklıdır.</p>
+  </footer>
+  <script>
+    document.querySelectorAll('.card').forEach(function(card) {
+      const priceDiv = card.querySelector('.price');
+      const input = card.querySelector('.discount-code');
+      const button = card.querySelector('.apply-discount');
+      const originalPrice = parseInt(priceDiv.getAttribute('data-price'));
+      button.onclick = function() {
+        const code = input.value.trim();
+        if (code === "HUSOW10") {
+          const discounted = Math.round(originalPrice * 0.9);
+          priceDiv.textContent = discounted + "₺ (indirimli)";
+        } else {
+          priceDiv.textContent = originalPrice + "₺";
+        }
+      };
+    });
+  </script>
+</body>
+</html>
